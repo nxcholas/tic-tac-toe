@@ -34,15 +34,13 @@ body {
 }
 
 .container {
-    height: 70vh;
-    width: 70vw;
+    height: 100%;
+    width: 37%;
     display: grid;
     justify-content: center;
     grid: repeat(3, minmax(150px,200px)) / repeat(3, minmax(150px,200px));
     grid-auto-rows: minmax(150px,150px);
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: scroll; 
+    margin-left: 1%;
 }
 
 .initial-style {
@@ -168,12 +166,5 @@ button{
 
     #heading-text{
         margin-bottom: 16px;
-    }
-}
-
-@media (min-height: 655px) {
-    .grid{
-        width: 150px;
-        height: 150px;
     }
 }
