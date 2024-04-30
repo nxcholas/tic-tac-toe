@@ -41,6 +41,7 @@ body {
     justify-content: center;
     gap: 10px;
     margin-bottom: 5%;
+    border: 1px solid green;
 }
 
 .initial-style {
@@ -134,4 +135,37 @@ button{
 
 #reset-area{
     margin-top: 10px;
+}
+
+@media (max-height: 655px) {
+    .grid {
+        width: 110px;
+        height: 110px;
+    }
+
+    .container{
+        margin-bottom: 1%;
+    }
+
+    .circleShape,
+    .xShape{
+    margin: 0 auto;
+    font-size: 70px;
+    color: var(--white);
+    }
+
+    #player-input-area {
+        width: 55vh;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    input {
+        width: 125px;
+    }
+
+    #heading-text{
+        margin-bottom: 16px;
+    }
 }
