@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link href="styles2rev.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="heading">tic-tac-toe</h1>
+        <div id="win-screen">
+            <p id="heading-text" style="visibility: hidden"><span id="winner-name" style="color: goldenrod"></span> you win!</p>
+            <div id="player-area">
+                <p><span id="playerOneName" style="color: orchid"></span></p>
+                <p><span id="playerTwoName" style="color: #393d46"></span></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid initial-style" data-num="0" data-property="none"> 
+                <div class="o child" style="visibility: hidden;">
+                    <p class="circleShape">O</p>
+                </div>
+                <div class="x child" style="visibility: hidden;">
+                    <p class="xShape">X</p>
+                </div>
+            </div>
+            <div class="grid initial-style" data-num="1" data-property="none">
+                <div class="o child" style="visibility: hidden;">
+                    <p class="circleShape">O</p>
+                </div>
+                <div class="x child" style="visibility: hidden;">
+                    <p class="xShape">X</p>
+                </div>
+            </div>
+            <div class="grid initial-style" data-num="2" data-property="">
+                <div class="o child" style="visibility: hidden;">
+                    <p class="circleShape">O</p>
+                </div>
+                <div class="x child" style="visibility: hidden;">
+                    <p class="xShape">X</p>
+                </div>
+            </div>
+            <div class="grid initial-style" data-num="3" data-property="none">
+                <div class="o child" style="visibility: hidden;">
+                    <p class="circleShape">O</p>
+                </div>
+                <div class="x child" style="visibility: hidden;">
+                    <p class="xShape">X</p>
+                </div>
+            </div>
+            <div class="grid initial-style" data-num="4" data-property="none">
+                <div class="o child" style="visibility: hidden;">
+                    <p class="circleShape">O</p>
+                </div>
+                <div class="x child" style="visibility: hidden;">
+                    <p class="xShape">X</p>
+                </div>
+            </div>
+            <div class="grid initial-style" data-num="5" data-property="none">
+                <div class="o child" style="visibility: hidden;">
+                    <p class="circleShape">O</p>
+                </div>
+                <div class="x child" style="visibility: hidden;">
+                    <p class="xShape">X</p>
+                </div>
+            </div>
+            <div class="grid initial-style" data-num="6" data-property="none">
+                <div class="o child" style="visibility: hidden;">
+                    <p class="circleShape">O</p>
+                </div>
+                <div class="x child" style="visibility: hidden;">
+                    <p class="xShape">X</p>
+                </div>
+            </div>
+            <div class="grid initial-style" data-num="7" data-property="none">
+                <div class="o child" style="visibility: hidden;">
+                    <p class="circleShape">O</p>
+                </div>
+                <div class="x child" style="visibility: hidden;">
+                    <p class="xShape">X</p>
+                </div>
+            </div>
+            <div class="grid initial-style" data-num="8" data-property="none">
+                <div class="o child" style="visibility: hidden;">
+                    <p class="circleShape">O</p>
+                </div>
+                <div class="x child" style="visibility: hidden;">
+                    <p class="xShape">X</p>
+                </div>
+            </div>
+        </div>
+        <div id="player-input-area">
+            <input required id="playerOne" type="text" placeholder="player 1">
+            <button onclick="storePlayerName()">submit</button>
+            <input required id="playerTwo" type="text" placeholder="player 2">
+        </div>
+        <div id="reset-area">
+            <button onclick="resetPage()">reset</button>
+        </div>
+</body>
+<script src="script2rev.js"></script>
+</html>

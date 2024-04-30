@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Munroe";
+    src: url('fonts/Munro-2LYe.ttf')
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan-1: #1dd3b0;
+    --blue-light: #cdf7f6;
+    --blue-reg: #086375;
+    --purple: #3c1642;
+    --white: white;
+    --background-darkgray: #212832;
+}
+
+body {
+    font-family: "Munroe";
+    background-color: var(--background-darkgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#heading {
+    text-align: center;
+    margin-bottom: 10%;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 55vh;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+.initial-style {
+    border-image: url(assets/pixel_border_futuristic_before.png);
+    border-image-slice: 15% 8% 15% 9%;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    background-color: var(--darkgray);
+    width: 175px;
+    height: 175px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hover-effect{
+    border-image: url(assets/pixel_border_futuristic.jpeg);
+    border-image-slice: 15% 8% 15% 9%;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+}
+
+.o,
+.x{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    left: 4%;
+    top: 16%;
+}
+
+.circleShape,
+.xShape{
+    margin: 0;
+    font-size: 100px;
+    color: var(--white);
+}
+
+#win-screen {
+    width: 55vh;
+    height: 5%;
+}
+
+#win-screen > p {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+#player-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+#player-input-area {
+    width: 55vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+span {
+    font-size: 20px;
+}
+
+
+#winner-name {
+    font-size: 32px;
+}
+
+input,
+button {
+    font-family: "Munro";
+    outline: none;
+    background: (var(--background-darkgray));
+    border-radius: 8px;
+    padding: 5px;
+    height: 3.5vh;
+}
+
+button{
+    color: var(--white);
+    width: 10vh;
+}
+
+#reset-area{
+    margin-top: 10px;
+}
