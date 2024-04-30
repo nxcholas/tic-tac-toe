@@ -34,14 +34,15 @@ body {
 }
 
 .container {
-    width: 55vh;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    height: 70vh;
+    width: 70vw;
+    display: grid;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 5%;
-    border: 1px solid green;
+    grid: repeat(3, minmax(150px,200px)) / repeat(3, minmax(150px,200px));
+    grid-auto-rows: minmax(150px,150px);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
 }
 
 .initial-style {
@@ -139,8 +140,8 @@ button{
 
 @media (max-height: 655px) {
     .grid {
-        width: 110px;
-        height: 110px;
+        width: 130px;
+        height: 130px;
     }
 
     .container{
@@ -167,5 +168,12 @@ button{
 
     #heading-text{
         margin-bottom: 16px;
+    }
+}
+
+@media (min-height: 655px) {
+    .grid{
+        width: 150px;
+        height: 150px;
     }
 }
