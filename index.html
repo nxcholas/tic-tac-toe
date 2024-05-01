@@ -7,13 +7,16 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1 id="heading">tic-tac-toe</h1>
+    <header>
+        <h1 id="heading">tic-tac-toe</h1>
+    </header>
         <div id="win-screen">
             <p id="heading-text" style="visibility: hidden"><span id="winner-name" style="color: goldenrod"></span> you win!</p>
-            <div id="player-area">
-                <p><span id="playerOneName" style="color: orchid"></span></p>
-                <p><span id="playerTwoName" style="color: #393d46"></span></p>
-            </div>
+        </div>
+        <div id="player-area">
+            <p><span id="playerOneName" style="color: orchid"></span></p>
+            <div></div>
+            <p><span id="playerTwoName" style="color: #393d46"></span></p>
         </div>
         <div class="container">
             <div class="grid initial-style" data-num="0" data-property="none"> 
@@ -91,7 +94,7 @@
         </div>
         <div id="player-input-area">
             <input required id="playerOne" type="text" placeholder="player 1 *required*">
-            <button onclick="storePlayerName()">submit</button>
+            <button id="submit-btn" onclick="storePlayerName()">submit</button>
             <input required id="playerTwo" type="text" placeholder="player 2 *required*">
         </div>
         <div id="reset-area">
